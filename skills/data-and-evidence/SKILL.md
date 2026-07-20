@@ -7,7 +7,7 @@ description: Use when scientific files contain data or results, analysis needs p
 
 Make every material claim traceable. Missing evidence narrows the claim; it never licenses a stronger story.
 
-## Inventory before analysis
+## Start with an inventory
 
 List each relevant file or dataset with path, format, owner or origin, collection or retrieval date when known, version, access restrictions, and readable/unreadable state. Report unknown or inaccessible inputs explicitly.
 

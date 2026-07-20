@@ -7,7 +7,7 @@ description: Use when drafting or revising scientific prose, calibrating claims,
 
 Draft from verified evidence, not from plausible narrative. Use direct scientific prose and make uncertainty visible.
 
-## Evidence-first drafting
+## Draft from evidence
 
 For each paragraph:
 
@@ -19,7 +19,7 @@ For each paragraph:
 
 Never invent citations, values, quotations, analyses, results, or explanations. Replace unsupported specifics with an explicit marker such as `[evidence needed: effect estimate and interval]`, or narrow the sentence to what evidence supports.
 
-## Notation registry
+## Keep notation consistent
 
 Maintain one canonical registry:
 

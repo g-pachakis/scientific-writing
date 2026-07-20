@@ -7,7 +7,7 @@ description: Use when defining a scientific project's contribution, audience, re
 
 Plan before prose. Match the plan to the study rather than forcing quantitative or disciplinary assumptions.
 
-## Build the plan
+## Build a research plan
 
 1. State the purpose, intended audience, document type, and decision the work should inform.
 2. Define the contribution against what is already known. Mark unverified novelty claims as gaps for literature checking.
@@ -21,7 +21,7 @@ Plan before prose. Match the plan to the study rather than forcing quantitative 
 
 7. List known gaps, dependencies, and decisions needed before drafting.
 
-## Boundaries
+## Scope and handoffs
 
 - Do not invent findings, novelty, sources, data, or methods.
 - Do not require numerical baselines, hypotheses, power calculations, or experiments unless applicable to the question and design.

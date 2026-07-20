@@ -1,8 +1,17 @@
 {
   "name": "scientific-writing",
   "version": "1.0.0",
-  "description": "Universal evidence-driven scientific writing skills for Pi and Claude Code.",
+  "description": "Evidence-driven scientific writing workflows for Pi and Claude Code.",
   "license": "MIT",
-  "keywords": ["pi-package", "scientific-writing", "academic-writing"],
+  "author": "g-pachakis",
+  "homepage": "https://github.com/g-pachakis/scientific-writing#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/g-pachakis/scientific-writing.git"
+  },
+  "bugs": {
+    "url": "https://github.com/g-pachakis/scientific-writing/issues"
+  },
+  "keywords": ["pi-package", "scientific-writing", "academic-writing", "research-writing", "manuscript"],
   "pi": { "skills": ["./skills"], "prompts": ["./prompts"] }
 }

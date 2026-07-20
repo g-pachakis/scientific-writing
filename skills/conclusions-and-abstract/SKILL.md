@@ -7,7 +7,7 @@ description: Use when writing or revising conclusions, limitations, future work,
 
 Synthesize only stable manuscript evidence. Write conclusions first; write the abstract last.
 
-## Conclusions
+## Write conclusions
 
 For each conclusion, record its supporting result, scope, uncertainty, and limiting method or assumption. Then write:
 
@@ -19,7 +19,7 @@ For each conclusion, record its supporting result, scope, uncertainty, and limit
 
 Remove claims that lack a result trace. Do not broaden from one population, setting, metric, or model beyond supported scope. Do not add citations or evidence that were not established in the manuscript.
 
-## Abstract last
+## Write the abstract last
 
 Start only after results, discussion, and conclusions are stable. Follow the required structure and word limit when provided. Otherwise include compact context, objective, design/method, principal results with verified quantitative detail where available, and a calibrated conclusion.
 

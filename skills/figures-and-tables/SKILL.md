@@ -7,7 +7,7 @@ description: Use when creating or reviewing scientific plots, figures, tables, c
 
 Choose the smallest visual form that answers the communication goal: comparison, distribution, relationship, composition, change, process, or exact lookup. Use a table when precise values matter more than pattern; do not duplicate the same result in both without reason.
 
-## Build
+## Design the visual
 
 - Trace every value to source data and analysis output. Preserve units, denominators, transformations, exclusions, and uncertainty.
 - Label axes, columns, groups, and units unambiguously. Explain abbreviations and statistical summaries.
@@ -17,11 +17,11 @@ Choose the smallest visual form that answers the communication goal: comparison,
 - Keep titles concise; let manuscript context carry titles when captions already identify the figure.
 - Avoid decorative effects, misleading axes, hidden baselines, and unsupported precision.
 
-## Caption contract
+## Write self-contained captions
 
 A caption identifies what is shown, population or data scope, encodings, units, uncertainty/error-bar meaning, sample size or denominator when relevant, panels, and necessary methods. It enables interpretation without inventing information.
 
-## Verify rendered output
+## Check the final rendering
 
 Render or export the final format, then inspect at intended size for clipping, overlap, tiny text, broken symbols, incorrect legends, ambiguous colors, missing cells, pagination, and caption-number agreement. Check values against source output. If rendering or accessibility tools are unavailable, state that visual verification is incomplete and give the exact manual check.
 

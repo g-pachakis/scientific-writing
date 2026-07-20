@@ -1,11 +1,11 @@
 ---
 name: write
-description: Use when planning, researching, drafting, revising, reviewing, formatting, or submitting scientific documents and the task needs routing to the relevant scientific-writing workflow.
+description: Use when planning, researching, drafting, revising, reviewing, formatting, or submitting scientific work and multiple workflows may apply.
 ---
 
-# Scientific Writing Router
+# Scientific Writing
 
-Route the request using only information that affects the work:
+Choose the minimum guidance needed for the request:
 
 1. **Scope:** local edit, single artifact, or full project.
 2. **Study type:** experimental, observational, clinical, qualitative, mixed-methods, computational, review/meta-analysis, theoretical, or other.
@@ -15,11 +15,11 @@ Route the request using only information that affects the work:
 
 Infer these from context; ask only for missing details that block the requested work. Default to Markdown and standard rigor.
 
-For local requests, load only matching companion skills and perform only the requested work. Do not start the full-project flow. Full projects use this single phase graph:
+For local requests, load only relevant skills and perform only the requested work. Do not start the full-project workflow. Full projects follow this sequence:
 
 `plan → literature/data → study reporting → draft → figures/tables → conclusions → abstract → integrity review → output`
 
-Companion skills:
+Available skills:
 
 - `research-planning`
 - `literature-and-citations`

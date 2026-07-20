@@ -7,7 +7,7 @@ description: Use when selecting or describing a study design, reviewing methods 
 
 Apply checks that fit the actual design. Do not impose one field's checklist on another.
 
-## Route by study type
+## Match guidance to study type
 
 Classify the work as experimental, observational, clinical, qualitative, mixed-methods, computational, review/meta-analysis, theoretical, or other. If classification changes what must be reported and cannot be inferred, ask.
 

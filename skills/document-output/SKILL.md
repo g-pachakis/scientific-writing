@@ -7,7 +7,7 @@ description: Use when selecting or producing Markdown, DOCX, LaTeX, or venue-tem
 
 Keep reviewed Markdown as default portable source. Choose another adapter only from explicit user, collaborator, repository, or venue requirements.
 
-## Select output
+## Choose an output format
 
 - **Markdown:** default for drafting, review, portability, and version control.
 - **DOCX:** use when editing or submission requires Word-compatible output.
@@ -16,13 +16,13 @@ Keep reviewed Markdown as default portable source. Choose another adapter only f
 
 Preserve headings, equations, citations, cross-references, figures, tables, captions, alt text, metadata, and tracked unresolved markers through conversion.
 
-## Capability boundary
+## Optional tools
 
 Pandoc, Python document libraries, TeX engines, desktop Word, citation managers, and converters are optional capabilities, not package dependencies. Detect availability before choosing a command. If a required tool is absent, keep the Markdown source and provide the exact conversion or manual step; never claim an artifact was generated.
 
 Do not synthesize linked citation-manager fields or claim live citation links unless genuine user-provided records and a supporting tool created and verified them. Plain citations are preferable to fake field codes.
 
-## Verify output
+## Check generated files
 
 When generation tools permit:
 

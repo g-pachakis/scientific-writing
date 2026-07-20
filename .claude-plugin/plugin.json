@@ -1,6 +1,6 @@
 {
   "name": "scientific-writing",
-  "description": "Universal evidence-driven scientific writing from research planning through integrity review and output.",
+  "description": "Evidence-driven workflows for planning, drafting, reviewing, and delivering scientific documents.",
   "version": "1.0.0",
-  "keywords": ["scientific-writing", "academic-writing", "research", "manuscript"]
+  "keywords": ["scientific-writing", "academic-writing", "research-writing", "research", "manuscript"]
 }

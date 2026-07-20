@@ -7,7 +7,7 @@ description: Use when reviewing scientific work, simulating peer review, checkin
 
 Scale review to risk and purpose. Review dimensions directly; do not impersonate named experts or require parallel agents.
 
-## Select rigor
+## Choose review depth
 
 - **Quick:** bounded internal or local review; check scientific correctness, evidence alignment, clarity, and obvious integrity risks.
 - **Standard:** full-document review; add methods/results coherence, citations, notation, visuals, reproducibility, and applicable disclosures.
@@ -20,7 +20,7 @@ Sequential review is always valid. Report findings as:
 
 `Blocking` means unsupported/fabricated content, material scientific error, unresolved ethics or consent need, integrity concern, missing critical evidence, or unmet required submission item. `Non-blocking` means optional clarity, style, or polish. Do not turn optional preferences into gates.
 
-## Integrity dimensions
+## Review integrity
 
 Check when applicable:
 

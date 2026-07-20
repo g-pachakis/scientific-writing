@@ -1,5 +1,5 @@
 ---
-description: Route a scientific-writing task to the minimum relevant workflow
+description: Plan, draft, revise, or review scientific work with the minimum relevant workflow
 argument-hint: "[task]"
 ---
 

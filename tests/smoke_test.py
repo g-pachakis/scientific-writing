@@ -31,16 +31,16 @@ FORBIDDEN_TERMS = (
 LINK = re.compile(r"(?<!!)\[[^]]*]\(([^)]+)\)")
 NAME = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 SKILL_MARKERS = {
-    "write": ("Scope:", "Companion skills:", "Never fabricate"),
+    "write": ("Scope:", "Available skills:", "Never fabricate"),
     "research-planning": ("evidence map", "Do not invent"),
     "literature-and-citations": ("Working library", "Cited set", "Never invent"),
     "data-and-evidence": ("Evidence ledger", "Verification state", "sensitive unpublished data"),
-    "study-design-and-reporting": ("Route by study type", "reporting guideline", "Never invent"),
-    "drafting-and-notation": ("Evidence-first drafting", "Notation registry", "Never invent"),
-    "figures-and-tables": ("Caption contract", "Verify rendered output", "Never rely on color alone"),
-    "conclusions-and-abstract": ("Abstract last", "stable results", "Do not"),
-    "review-and-integrity": ("Select rigor", "Sensitive unpublished data", "Before a pass claim"),
-    "document-output": ("Markdown", "Capability boundary", "Never"),
+    "study-design-and-reporting": ("Classify the work", "reporting guideline", "Never invent"),
+    "drafting-and-notation": ("For each paragraph", "canonical registry", "Never invent"),
+    "figures-and-tables": ("A caption identifies", "Render or export", "Never rely on color alone"),
+    "conclusions-and-abstract": ("write the abstract last", "stable results", "Do not"),
+    "review-and-integrity": ("Quick:", "Submission:", "Before a pass claim"),
+    "document-output": ("Markdown", "optional capabilities", "Never"),
 }
 
 
@@ -81,6 +81,17 @@ def package_checks(checks):
         if isinstance(pi, dict):
             checks.require(pi.get("skills") == ["./skills"], "package.json must declare Pi skills path ./skills")
             checks.require(pi.get("prompts") == ["./prompts"], "package.json must declare Pi prompts path ./prompts")
+        checks.require(
+            package.get("homepage") == "https://github.com/g-pachakis/scientific-writing#readme",
+            "package.json must declare the public homepage",
+        )
+        repository = package.get("repository")
+        checks.require(
+            isinstance(repository, dict)
+            and repository.get("type") == "git"
+            and repository.get("url") == "git+https://github.com/g-pachakis/scientific-writing.git",
+            "package.json must declare the public Git repository",
+        )
     if plugin is not None:
         checks.require(plugin.get("name") == PACKAGE_NAME, "plugin name must be scientific-writing")
         checks.require(plugin.get("version") == VERSION, "plugin version must be 1.0.0")
@@ -173,7 +184,7 @@ def prompt_checks(checks, required):
     checks.require(metadata is not None, "Pi prompt must have YAML frontmatter")
     if metadata is not None:
         checks.require(
-            metadata.get("description") == "Route a scientific-writing task to the minimum relevant workflow",
+            metadata.get("description") == "Plan, draft, revise, or review scientific work with the minimum relevant workflow",
             "Pi prompt description must match package contract",
         )
         checks.require(metadata.get("argument-hint") == "[task]", "Pi prompt argument hint must be [task]")
@@ -191,6 +202,7 @@ def full_checks(checks):
         checks.failures.append("missing README.md")
     else:
         text = readme.read_text(encoding="utf-8")
+        checks.require(text.startswith("# Scientific Writing\n"), "README must use the public title: Scientific Writing")
         rows = set(re.findall(r"^\|\s*`([a-z0-9-]+)`\s*\|", text, re.MULTILINE))
         checks.require(rows == SKILLS, "README skill table must list exactly the complete skill inventory")
         required_docs = (

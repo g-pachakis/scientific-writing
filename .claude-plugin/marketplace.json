@@ -1,0 +1,5 @@
+{
+  "name": "scientific-writing",
+  "owner": { "name": "g-pachakis" },
+  "plugins": [{ "name": "scientific-writing", "source": "./", "version": "1.0.0" }]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "scientific-writing",
+  "version": "1.0.0",
+  "description": "Universal evidence-driven scientific writing skills for Pi and Claude Code.",
+  "license": "MIT",
+  "keywords": ["pi-package", "scientific-writing", "academic-writing"],
+  "pi": { "skills": ["./skills"], "prompts": ["./prompts"] }
+}

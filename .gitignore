@@ -1,0 +1,17 @@
+.worktrees/
+.superpowers/
+.pi-subagents/
+
+# Local planning and evaluation artifacts
+/docs/superpowers/
+/docs/current-skill-assessment.md
+/docs/behavioral-evaluation.md
+
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
+~$*
+.tmp/
+tmp/
+temp/
